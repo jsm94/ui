@@ -20,6 +20,7 @@ import { ButtonWithIcon } from "@/components/examples/button/with-icon"
 import { CalendarDemo } from "@/components/examples/calendar/demo"
 import { CardDemo } from "@/components/examples/card/demo"
 import { CardWithForm } from "@/components/examples/card/with-form"
+import { CarouselDemo } from "@/components/examples/carousel/demo"
 import { CheckboxDemo } from "@/components/examples/checkbox/demo"
 import { CheckboxDisabled } from "@/components/examples/checkbox/disabled"
 import { CheckboxWithText } from "@/components/examples/checkbox/with-text"
@@ -121,6 +122,7 @@ export const examples = {
   DatePickerWithPresets,
   CardDemo,
   CardWithForm,
+  CarouselDemo,
   CheckboxDemo,
   CheckboxDisabled,
   CheckboxWithText,

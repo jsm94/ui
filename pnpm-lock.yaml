@@ -201,19 +201,25 @@ importers:
         version: 0.2.0(@types/react@18.0.22)(react-dom@18.2.0)(react@18.2.0)
       contentlayer:
         specifier: 0.3.0
-        version: 0.3.0(esbuild@0.17.3)
+        version: 0.3.0(esbuild@0.17.3)(markdown-wasm@1.2.0)
       date-fns:
         specifier: ^2.29.3
         version: 2.29.3
+      embla-carousel-react:
+        specifier: 8.0.0-rc04
+        version: 8.0.0-rc04(react@18.2.0)
       lucide-react:
         specifier: 0.214.0
         version: 0.214.0(react@18.2.0)
+      markdown-wasm:
+        specifier: ^1.2.0
+        version: 1.2.0
       next:
         specifier: 13.3.5-canary.5
         version: 13.3.5-canary.5(@babel/core@7.20.7)(@opentelemetry/api@1.1.0)(react-dom@18.2.0)(react@18.2.0)
       next-contentlayer:
         specifier: 0.3.0
-        version: 0.3.0(esbuild@0.17.3)(next@13.3.5-canary.5)(react-dom@18.2.0)(react@18.2.0)
+        version: 0.3.0(esbuild@0.17.3)(markdown-wasm@1.2.0)(next@13.3.5-canary.5)(react-dom@18.2.0)(react@18.2.0)
       next-themes:
         specifier: ^0.2.1
         version: 0.2.1(next@13.3.5-canary.5)(react-dom@18.2.0)(react@18.2.0)
@@ -994,10 +1000,10 @@ packages:
       chalk: 4.1.2
     dev: false
 
-  /@contentlayer/cli@0.3.0(esbuild@0.17.3):
+  /@contentlayer/cli@0.3.0(esbuild@0.17.3)(markdown-wasm@1.2.0):
     resolution: {integrity: sha512-Mqb6NlIKINt2qsPKft+o8m5tJhJXVgVSd0zP1BH+CQRmvR/zwTT3maz1bDCPHBYGKgGCQKtvgM66IjvH+dmC6Q==}
     dependencies:
-      '@contentlayer/core': 0.3.0(esbuild@0.17.3)
+      '@contentlayer/core': 0.3.0(esbuild@0.17.3)(markdown-wasm@1.2.0)
       '@contentlayer/utils': 0.3.0
       clipanion: 3.2.0(typanion@3.12.1)
       typanion: 3.12.1
@@ -1008,10 +1014,10 @@ packages:
       - supports-color
     dev: false
 
-  /@contentlayer/client@0.3.0(esbuild@0.17.3):
+  /@contentlayer/client@0.3.0(esbuild@0.17.3)(markdown-wasm@1.2.0):
     resolution: {integrity: sha512-yzDYiZtqOJwWrsykieA1LMnhKbaYcJhAy7s8Xs7zU5wFfyBTO258gvmK5dVi4LuzmOOPVMJn6FpEofT/RAKVtg==}
     dependencies:
-      '@contentlayer/core': 0.3.0(esbuild@0.17.3)
+      '@contentlayer/core': 0.3.0(esbuild@0.17.3)(markdown-wasm@1.2.0)
     transitivePeerDependencies:
       - '@effect-ts/otel-node'
       - esbuild
@@ -1019,7 +1025,7 @@ packages:
       - supports-color
     dev: false
 
-  /@contentlayer/core@0.3.0(esbuild@0.17.3):
+  /@contentlayer/core@0.3.0(esbuild@0.17.3)(markdown-wasm@1.2.0):
     resolution: {integrity: sha512-5cL4W0nK9kNqxgBkIgauUko0SRAHf8oPoxRhdsSPQ7FSCgZGz2crMeSJOFmj3a3govh863/mKhXfkoUJBoDgnA==}
     peerDependencies:
       esbuild: 0.17.x
@@ -1035,6 +1041,7 @@ packages:
       comment-json: 4.2.3
       esbuild: 0.17.3
       gray-matter: 4.0.3
+      markdown-wasm: 1.2.0
       mdx-bundler: 9.2.1(esbuild@0.17.3)
       rehype-stringify: 9.0.3
       remark-frontmatter: 4.0.1
@@ -1048,10 +1055,10 @@ packages:
       - supports-color
     dev: false
 
-  /@contentlayer/source-files@0.3.0(esbuild@0.17.3):
+  /@contentlayer/source-files@0.3.0(esbuild@0.17.3)(markdown-wasm@1.2.0):
     resolution: {integrity: sha512-6crNuRdWGYFec0Kn/DpbrzpOu8bttFmOmOpX1HIYQz4iPisg+8biybLBiNU7Y6aCUjEZLOnM7AaHpMFvhrYWsw==}
     dependencies:
-      '@contentlayer/core': 0.3.0(esbuild@0.17.3)
+      '@contentlayer/core': 0.3.0(esbuild@0.17.3)(markdown-wasm@1.2.0)
       '@contentlayer/utils': 0.3.0
       chokidar: 3.5.3
       fast-glob: 3.2.12
@@ -1069,11 +1076,11 @@ packages:
       - supports-color
     dev: false
 
-  /@contentlayer/source-remote-files@0.3.0(esbuild@0.17.3):
+  /@contentlayer/source-remote-files@0.3.0(esbuild@0.17.3)(markdown-wasm@1.2.0):
     resolution: {integrity: sha512-4PnaK5cfQiduMUEO6nzqsD4ttD5RG4ffcyeSp5MLhpU0DTEZcfGXFRO777ddEI8PZ0/NJuhfz9MGbdO90QYlsw==}
     dependencies:
-      '@contentlayer/core': 0.3.0(esbuild@0.17.3)
-      '@contentlayer/source-files': 0.3.0(esbuild@0.17.3)
+      '@contentlayer/core': 0.3.0(esbuild@0.17.3)(markdown-wasm@1.2.0)
+      '@contentlayer/source-files': 0.3.0(esbuild@0.17.3)(markdown-wasm@1.2.0)
       '@contentlayer/utils': 0.3.0
     transitivePeerDependencies:
       - '@effect-ts/otel-node'
@@ -4324,17 +4331,17 @@ packages:
       yargs: 17.7.1
     dev: false
 
-  /contentlayer@0.3.0(esbuild@0.17.3):
+  /contentlayer@0.3.0(esbuild@0.17.3)(markdown-wasm@1.2.0):
     resolution: {integrity: sha512-3LEF5HMHjSytlT8SErC3U59Pt2LP80a6Z2f/0mSIPeA4xty0LNChyHqzALySSM0osAEz32RY56Fifk5P+2dCIA==}
     engines: {node: '>=14.18'}
     hasBin: true
     requiresBuild: true
     dependencies:
-      '@contentlayer/cli': 0.3.0(esbuild@0.17.3)
-      '@contentlayer/client': 0.3.0(esbuild@0.17.3)
-      '@contentlayer/core': 0.3.0(esbuild@0.17.3)
-      '@contentlayer/source-files': 0.3.0(esbuild@0.17.3)
-      '@contentlayer/source-remote-files': 0.3.0(esbuild@0.17.3)
+      '@contentlayer/cli': 0.3.0(esbuild@0.17.3)(markdown-wasm@1.2.0)
+      '@contentlayer/client': 0.3.0(esbuild@0.17.3)(markdown-wasm@1.2.0)
+      '@contentlayer/core': 0.3.0(esbuild@0.17.3)(markdown-wasm@1.2.0)
+      '@contentlayer/source-files': 0.3.0(esbuild@0.17.3)(markdown-wasm@1.2.0)
+      '@contentlayer/source-remote-files': 0.3.0(esbuild@0.17.3)(markdown-wasm@1.2.0)
       '@contentlayer/utils': 0.3.0
     transitivePeerDependencies:
       - '@effect-ts/otel-node'
@@ -4761,6 +4768,28 @@ packages:
 
   /electron-to-chromium@1.4.368:
     resolution: {integrity: sha512-e2aeCAixCj9M7nJxdB/wDjO6mbYX+lJJxSJCXDzlr5YPGYVofuJwGN9nKg2o6wWInjX6XmxRinn3AeJMK81ltw==}
+
+  /embla-carousel-react@8.0.0-rc04(react@18.2.0):
+    resolution: {integrity: sha512-dVr8kHkjizjRtxaN2HZU4uOEOgO32RorWPGKLHQxh641eU5e/CkYE8S5g0gkLKQIhivNtbBRJfTr4Oj9P9GupA==}
+    peerDependencies:
+      react: ^16.8.0 || ^17.0.1 || ^18.0.0
+    dependencies:
+      embla-carousel: 8.0.0-rc04
+      embla-carousel-reactive-utils: 8.0.0-rc04(embla-carousel@8.0.0-rc04)
+      react: 18.2.0
+    dev: false
+
+  /embla-carousel-reactive-utils@8.0.0-rc04(embla-carousel@8.0.0-rc04):
+    resolution: {integrity: sha512-aXH07V2jht6XL7dN01dCNLWiHeaoYZnFcmHKGCsawGpkJPmylJPQ05o/1icCHSelPZbNk55ztHi5D8uAFOKX8w==}
+    peerDependencies:
+      embla-carousel: 8.0.0-rc04
+    dependencies:
+      embla-carousel: 8.0.0-rc04
+    dev: false
+
+  /embla-carousel@8.0.0-rc04:
+    resolution: {integrity: sha512-+yIKQPSiS+2WcjIjXknCSQ3SPtyRvLjwU0+HJBi7ZAxvg+i405PSVGi0nD3c9XzI3X0s4Y1yuRgthDzusJ8pFw==}
+    dev: false
 
   /emoji-regex@10.2.1:
     resolution: {integrity: sha512-97g6QgOk8zlDRdgq1WxwgTMgEWGVAQvB5Fdpgc1MkNy56la5SKP9GsMXKDOdqwn90/41a8yPwIGk1Y6WVbeMQA==}
@@ -6799,6 +6828,10 @@ packages:
     resolution: {integrity: sha512-Z1NL3Tb1M9wH4XESsCDEksWoKTdlUafKc4pt0GRwjUyXaCFZ+dc3g2erqB6zm3szA2IUSi7VnPI+o/9jnxh9hw==}
     dev: true
 
+  /markdown-wasm@1.2.0:
+    resolution: {integrity: sha512-S12OTkyXCkOgI1n1rZY9cg4bK/PGu80Emjpvwp8BEjwCxhPV3yddF0U6+QhCitdBsI1tzWcoeahmW7k0Pq81OA==}
+    dev: false
+
   /mdast-util-definitions@5.1.2:
     resolution: {integrity: sha512-8SVPMuHqlPME/z3gqVwWY4zVXn8lqKv/pAhC57FuJ40ImXyBpmO5ukh98zB2v7Blql2FiHjHv9LVztSIqjY+MA==}
     dependencies:
@@ -7485,14 +7518,14 @@ packages:
   /natural-compare@1.4.0:
     resolution: {integrity: sha512-OWND8ei3VtNC9h7V60qff3SVobHr996CTwgxubgyQYEpg290h9J0buyECNNJexkFm5sOajh5G116RYA1c8ZMSw==}
 
-  /next-contentlayer@0.3.0(esbuild@0.17.3)(next@13.3.5-canary.5)(react-dom@18.2.0)(react@18.2.0):
+  /next-contentlayer@0.3.0(esbuild@0.17.3)(markdown-wasm@1.2.0)(next@13.3.5-canary.5)(react-dom@18.2.0)(react@18.2.0):
     resolution: {integrity: sha512-vt+RaD3nIgZ6oXadtZH19a1mpxvGEoiifdtmXqBSz4rHMRcMA1YZCuSWyj+P9uX7MDmIL6JT6QSp+hvTBMaxiw==}
     peerDependencies:
       next: ^12 || ^13
       react: '*'
       react-dom: '*'
     dependencies:
-      '@contentlayer/core': 0.3.0(esbuild@0.17.3)
+      '@contentlayer/core': 0.3.0(esbuild@0.17.3)(markdown-wasm@1.2.0)
       '@contentlayer/utils': 0.3.0
       next: 13.3.5-canary.5(@babel/core@7.20.7)(@opentelemetry/api@1.1.0)(react-dom@18.2.0)(react@18.2.0)
       react: 18.2.0
