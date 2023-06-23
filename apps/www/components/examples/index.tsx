@@ -20,6 +20,7 @@ import { ButtonWithIcon } from "@/components/examples/button/with-icon"
 import { CalendarDemo } from "@/components/examples/calendar/demo"
 import { CardDemo } from "@/components/examples/card/demo"
 import { CardWithForm } from "@/components/examples/card/with-form"
+import { CarouselNavigationDemo } from "@/components/examples/carousel-navigation/demo"
 import { CarouselDemo } from "@/components/examples/carousel/demo"
 import { CheckboxDemo } from "@/components/examples/checkbox/demo"
 import { CheckboxDisabled } from "@/components/examples/checkbox/disabled"
@@ -123,6 +124,7 @@ export const examples = {
   CardDemo,
   CardWithForm,
   CarouselDemo,
+  CarouselNavigationDemo,
   CheckboxDemo,
   CheckboxDisabled,
   CheckboxWithText,

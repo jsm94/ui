@@ -13,26 +13,29 @@ export function CarouselDemo() {
 
   return (
     <Carousel>
-      <CarouselViewport ref={ref}>
+      <CarouselViewport className="rounded-md" ref={ref}>
         <CarouselContainer>
-          <CarouselSlide key={1}>
+          <CarouselSlide>
             <Image
+              className="w-full"
               src="https://images.unsplash.com/photo-1682685797736-dabb341dc7de?w=600&q=80"
               alt="Hisma Desert - NEOM Saudi Arabia"
               width={600}
               height={400}
             />
           </CarouselSlide>
-          <CarouselSlide key={2}>
+          <CarouselSlide>
             <Image
+              className="w-full"
               src="https://images.unsplash.com/photo-1682685796766-0fddd3e480de?w=600&q=80"
               alt="Hisma Desert - NEOM Saudi Arabia"
               width={600}
               height={400}
             />
           </CarouselSlide>
-          <CarouselSlide key={3}>
+          <CarouselSlide>
             <Image
+              className="w-full"
               src="https://images.unsplash.com/photo-1682687220499-d9c06b872eee?w=600&q=80"
               alt="Hisma Desert - NEOM Saudi Arabia"
               width={600}
